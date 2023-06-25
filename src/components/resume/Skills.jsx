@@ -26,17 +26,29 @@ const Skills = () => {
       <div className="col-span-4">
         <ResumeTitle title="Design" icon={<SiArtstation />} />
         <div className="py-4">
-          <SkillRate skill="Web Development" rate="50%" />
-          <SkillRate skill="Web Design" rate="50%" />
-          <SkillRate skill="Mobile Application" rate="50%" />
-          <SkillRate skill="UI Design" rate="50%" />
+          <SkillRate skill="Web Development" rate="1/2" />
+          <SkillRate skill="Web Design" rate="1/2" />
+          <SkillRate skill="Mobile Application" rate="1/2" />
+          <SkillRate skill="UI Design" rate="1/2" />
         </div>
         <ResumeTitle title="Coding" icon={<BiCodeAlt />} />
         <div className="py-4">
-          <SkillRate skill="Javascript" rate="50%" />
-          <SkillRate skill="Nodejs" rate="50%" />
-          <SkillRate skill="Reactjs" rate="50%" />
-          <SkillRate skill="Typescript" rate="50%" />
+          <SkillRate
+            skill="Javascript"
+            className="w-2/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Nodejs"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Reactjs"
+            className="w-2/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Typescript"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
         </div>
       </div>
       <div className="w-full h-full flex justify-center items-center">
@@ -45,10 +57,10 @@ const Skills = () => {
       <div className="col-span-4">
         <ResumeTitle title="Languages" icon={<FaFlag />} />
         <div className="py-4">
-          <SkillRate skill="English" rate="50%" />
-          <SkillRate skill="Hindi" rate="50%" />
-          <SkillRate skill="Arabic" rate="50%" />
-          <SkillRate skill="French" rate="50%" />
+          <SkillRate skill="English" rate="1/2" />
+          <SkillRate skill="Hindi" rate="1/2" />
+          <SkillRate skill="Arabic" rate="1/2" />
+          <SkillRate skill="French" rate="1/2" />
         </div>
         <ResumeTitle title="Knowledge" icon={<IoIosPaper />} />
         <div className="py-2">

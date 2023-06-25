@@ -32,11 +32,26 @@ const Home = () => {
   };
 
   useEffect(() => {
-    document.body.addEventListener("click", (e) => {
+    const onClick = (e) => {
       if (e.target.contains(ref.current)) {
         setSidenav(false);
       }
-    });
+    };
+
+    document.body.addEventListener("click", onClick);
+
+    const onEscape = (e) => {
+      if (e.key === "Escape") {
+        setSidenav(false);
+      }
+    };
+
+    document.addEventListener("keydown", onEscape);
+
+    return () => {
+      document.removeEventListener("click", onClick);
+      document.removeEventListener("keydown", onEscape);
+    };
   }, []);
 
   return (
