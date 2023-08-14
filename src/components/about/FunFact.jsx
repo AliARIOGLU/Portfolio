@@ -14,7 +14,7 @@ const funs = [
 
 const FunFact = () => {
   return (
-    <div className="px-0 grid grid-cols-4 pb-10">
+    <div className="grid grid-cols-4 pb-10">
       {funs.map((fun) => (
         <FunCard
           icon={<fun.icon />}

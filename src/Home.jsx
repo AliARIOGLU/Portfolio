@@ -5,6 +5,8 @@ import { IoIosPaper } from "react-icons/io";
 import { MdWork, MdOutlineClose } from "react-icons/md";
 import { SiGooglechat } from "react-icons/si";
 import { BsTelephonePlusFill } from "react-icons/bs";
+
+// COMPONENTS
 import Left from "./components/home/Left";
 import About from "./components/about/About";
 import Resume from "./components/resume/Resume";
@@ -212,7 +214,7 @@ const Home = () => {
       </div>
       <div className="w-[94%] h-full bg-transparent flex items-center">
         {/* Left part start*/}
-        <Left />
+        <Left handleRotate={handleRotate} setContact={setContact} />
         {/*Right part start*/}
         <div className="w-8/12 h-[95%] bg-bodyColor">
           <div className="w-full h-[96%] overflow-scroll scrollbar-thin scrollbar-thumb-[#646464]">

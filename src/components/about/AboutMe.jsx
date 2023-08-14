@@ -2,10 +2,12 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="flex pb-6">
+    <div className="flex  border-b-[1px] border-b-zinc-800">
       <div className="w-1/2 text-zinc-400 p-6 borderRight flex flex-col py-6">
         <div className="py-6">
-          <h2 className="font-semibold mb-1 text-lg">Hello! I'm John Doe</h2>
+          <h2 className="font-semibold mb-1 text-lg text-yellow-400">
+            Hello! I'm John Doe
+          </h2>
           <p className="text-base leading-6">
             Web designer from USA, California. I have rich experience in web
             site design and building, also I am good at wordpress. I love to

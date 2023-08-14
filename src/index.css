@@ -25,6 +25,10 @@
     @apply border-[1px] border-zinc-800;
   }
 
+  .linkItem {
+    @apply hover:text-designColor duration-300 cursor-pointer text-xl;
+  }
+
   /*About Me Start*/
 
   .aboutRightLi {

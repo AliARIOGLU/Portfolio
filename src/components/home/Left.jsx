@@ -7,9 +7,9 @@ import { SiYoutubemusic } from "react-icons/si";
 import { FiInstagram, FiMail, FiSend } from "react-icons/fi";
 import { bannerImg } from "../../assets";
 
-const Left = () => {
+const Left = ({ setContact, handleRotate }) => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Frontend Developer", "UI Designer"],
+    words: ["Web Developer", "Frontend Developer"],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 20,
@@ -17,7 +17,7 @@ const Left = () => {
   });
 
   return (
-    <div className="w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShadow z-10">
+    <div className="w-4/12 h-full bg-bodyColor rounded-2xl shadow-testShadow z-10">
       <div className="w-full h-3/5">
         <img
           className="w-full h-full object-cover rounded-2xl"
@@ -28,31 +28,36 @@ const Left = () => {
       </div>
       <div className="w-full h-2/5 ">
         <div className="flex flex-col items-center gap-2 py-10">
-          <h1 className="text-textColor text-4xl font-semibold">John Doe</h1>
+          <h1 className="text-textColor text-4xl font-semibold">Ali Arıoğlu</h1>
           <p className="text-base text-designColor tracking-wide">
             {text}
             <Cursor cursorBlinking="false" cursorStyle="|" />
           </p>
           <div className="flex justify-center gap-2 mt-2">
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <a
+              href="https://github.com/AliARIOGLU"
+              target="_blank"
+              rel="noreferrer"
+              className="linkItem"
+            >
               <FaGithub />
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            </a>
+            <span className="linkItem">
               <FaLinkedin />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <span className="linkItem">
               <SiYoutubemusic />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <span className="linkItem">
               <BsFacebook />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <span className="linkItem">
               <FiInstagram />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <span className="linkItem">
               <AiFillTwitterCircle />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            <span className="linkItem">
               <FiMail />
             </span>
           </div>
@@ -70,6 +75,7 @@ const Left = () => {
             </button>
           </a>
           <button
+            onClick={() => handleRotate(setContact)}
             className="w-1/2 h-full flex justify-center items-center gap-2 text-sm 
           tracking-wide uppercase hover:text-designColor duration-300s borderLeft borderTop"
           >

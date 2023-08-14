@@ -26,10 +26,22 @@ const Skills = () => {
       <div className="col-span-4">
         <ResumeTitle title="Design" icon={<SiArtstation />} />
         <div className="py-4">
-          <SkillRate skill="Web Development" rate="1/2" />
-          <SkillRate skill="Web Design" rate="1/2" />
-          <SkillRate skill="Mobile Application" rate="1/2" />
-          <SkillRate skill="UI Design" rate="1/2" />
+          <SkillRate
+            skill="Web Development"
+            className="w-2/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Web Design"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Mobile Application"
+            className="w-1/4 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="UI Design"
+            className="w-2/3 h-full absolute top-0 left-0 bg-designColor"
+          />
         </div>
         <ResumeTitle title="Coding" icon={<BiCodeAlt />} />
         <div className="py-4">
@@ -57,10 +69,22 @@ const Skills = () => {
       <div className="col-span-4">
         <ResumeTitle title="Languages" icon={<FaFlag />} />
         <div className="py-4">
-          <SkillRate skill="English" rate="1/2" />
-          <SkillRate skill="Hindi" rate="1/2" />
-          <SkillRate skill="Arabic" rate="1/2" />
-          <SkillRate skill="French" rate="1/2" />
+          <SkillRate
+            skill="English"
+            className="w-2/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Hindi"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="Arabic"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
+          <SkillRate
+            skill="French"
+            className="w-1/3 h-full absolute top-0 left-0 bg-designColor"
+          />
         </div>
         <ResumeTitle title="Knowledge" icon={<IoIosPaper />} />
         <div className="py-2">

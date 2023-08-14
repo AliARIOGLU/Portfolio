@@ -22,6 +22,14 @@ const ProjectCard = ({ image, title, category }) => {
         {title}
       </h3>
       <p className="text-base text-gray-400 -mt-1">{category}</p>
+      <div className="flex items-center justify-between gap-8 mt-2">
+        <button className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200">
+          Code
+        </button>
+        <button className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200">
+          Live
+        </button>
+      </div>
     </div>
   );
 };
