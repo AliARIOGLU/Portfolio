@@ -1,12 +1,12 @@
 import React from "react";
 
-const ProjectCard = ({ image, title, category }) => {
+const ProjectCard = ({ image, title, category, codeUrl, siteUrl }) => {
   return (
     <div
       className="w-full py-8 flex flex-col justify-center items-center
-    border-b-[1px] border-b-zinc-800"
+    border-b-[1px] border-b-zinc-800 group"
     >
-      <div className="w-full h-full mb-3 overflow-hidden relative cursor-pointer group">
+      <div className="w-full h-full mb-3 overflow-hidden relative cursor-pointer">
         <img
           className="group-hover:scale-110 transition-all duration-200"
           src={image}
@@ -22,13 +22,23 @@ const ProjectCard = ({ image, title, category }) => {
         {title}
       </h3>
       <p className="text-base text-gray-400 -mt-1">{category}</p>
-      <div className="flex items-center justify-between gap-8 mt-2">
-        <button className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200">
+      <div className="flex items-center justify-between gap-8 mt-2 opacity-0 group-hover:opacity-100">
+        <a
+          href={codeUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200 cursor-pointer"
+        >
           Code
-        </button>
-        <button className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200">
+        </a>
+        <a
+          href={siteUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 border-dotted border-[2px] rounded-md hover:bg-white hover:text-zinc-800 transition-all duration-200 cursor-pointer"
+        >
           Live
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -1,31 +1,49 @@
 import React from "react";
 import {
-  workImgOne,
-  workImgTwo,
   workImgFour,
-  workImgFive,
   workImgSix,
   workImgSeven,
   blogImgOne,
-  blogImgThree,
+  projectImgOne,
+  projectImgTwo,
+  projectImgThree,
+  projectImgFour,
 } from "../../assets/index.js";
 import Title from "../home/Title.jsx";
 import ProjectCard from "./ProjectCard.jsx";
 
 const leftProjects = [
-  { id: 1, title: "Blog Website", category: "Website", image: blogImgThree },
+  {
+    id: 1,
+    title: "Airbnb Clone",
+    category: "Website",
+    image: projectImgOne,
+    codeUrl: "https://github.com/AliARIOGLU/airbnb-clone",
+    siteUrl: "https://trip-reservation-app.vercel.app/",
+  },
   {
     id: 2,
-    title: "Business Card Design",
-    category: "Design",
-    image: workImgOne,
+    title: "Admin Dashboard",
+    category: "Dashboard",
+    image: projectImgThree,
+    codeUrl: "https://github.com/AliARIOGLU/admin-dashboard",
+    siteUrl: "https://admin-dashboard-by-arioglu.netlify.app/",
   },
-  { id: 3, title: "Infinity Logo", category: "Logo", image: workImgTwo },
+  {
+    id: 3,
+    title: "Nika Landing Page",
+    category: "Landing Page",
+    image: projectImgTwo,
+    codeUrl: "https://github.com/AliARIOGLU/nike-website-ui",
+    siteUrl: "https://nike-landing-ui.netlify.app/",
+  },
   {
     id: 4,
-    title: "Mobile Application",
-    category: "Shopping",
-    image: workImgFive,
+    title: "Country Select App",
+    category: "Mini Application",
+    image: projectImgFour,
+    codeUrl: "https://github.com/AliARIOGLU/countryselectorapp",
+    siteUrl: "https://mini-country-select-app.netlify.app/",
   },
 ];
 
@@ -49,6 +67,8 @@ const Projects = () => {
         <div className="px-6">
           {leftProjects.map((project) => (
             <ProjectCard
+              codeUrl={project.codeUrl}
+              siteUrl={project.siteUrl}
               title={project.title}
               category={project.category}
               image={project.image}
